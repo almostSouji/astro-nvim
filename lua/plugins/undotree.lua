@@ -3,6 +3,7 @@ return {
   name = 'undotree',
   priority = 1000,
   config = function()
+    vim.g.undotree_DiffCommand = 'FC' -- WARNING: required for windows, as "diff" is not a default command; remove line if on unix
     vim.keymap.set('n', '<leader><F5>', vim.cmd.UndotreeToggle, { desc = 'Undo tree' })
   end,
 }
