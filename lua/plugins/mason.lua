@@ -12,6 +12,7 @@ return {
         -- install language servers
         "lua-language-server",
         "biome",
+        "tinymist",
 
         -- install formatters
         "stylua",
